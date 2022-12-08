@@ -1,0 +1,73 @@
+html {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+body{
+    height: 100%;
+}
+
+.container {
+    padding: 25px 50px;
+}
+.main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    width: 40%;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #888;
+}
+.nav-links a.active {
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+}
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.bold {
+    font-weight: bold;
+    color: #222;
+}
+.login-btn {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    color: #888;
+}
+.main {
+    margin-top: 30px;
+    width: 100%;
+}
+.main-container {
+    width: 80%;
+}
+.aside {
+    width: 20%;
+}
+.title {
+
+}
+.title p {
+    margin-bottom: 60px;
+}
+.violet {
+    color: rgb(242, 7, 156);
+}
+.description {
+    width: 80%;
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+}
