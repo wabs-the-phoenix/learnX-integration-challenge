@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/externals/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/externals/font-awesome/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>LearnX challenge</title>
 </head>
 <body>
@@ -17,20 +16,20 @@
                     <span class="bold">LearnX.</span>
                 </div>
                 <div class="nav-item flex space-between nav-links">
-                    <a href="#" class="nav-link active">Home</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Courses</a>
-                    <a href="#" class="nav-link">Trainer</a>
-                    <a href="#" class="nav-link">Contact</a>
+                    <div><a href="#" class="nav-link active">Home</a></div>
+                    <div><a href="#" class="nav-link">About</a></div>
+                    <div><a href="#" class="nav-link">Courses</a></div>
+                    <div><a href="#" class="nav-link">Trainer</a></div>
+                    <div><a href="#" class="nav-link">Contact</a></div>
                 </div>
                 <div class="nav-item">
-                    <button class="login-btn">
+                    <a class="login-btn" href="#">
                         Login
-                    </button>
+                    </a>
                 </div>
             </nav>
         </header>
-        <div class="main flex">
+        <div class="main flex relative">
             <div class="main-container">
                 <div>
                     <h1 class="title">
@@ -47,15 +46,22 @@
                     </div>
                 </div>
                 <div class="logos">
-                    <span class="logo"><i class="fa fa-bell"></i> Microsoft</span>
-                    <span class="logo"><span class="logo-icon"></span> Facebook</span>
-                    <span class="logo"><span class="logo-icon"></span> Vimeo-v</span>
+                    <span class="logo"><i class="fa-brands fa-windows"></i> Microsoft</span>
+                    <span class="logo"><i class="fa-brands fa-meta"></i> Meta</span>
+                    <span class="logo"><i class="fa-brands fa-vimeo-v"></i> Vimeo-v</span>
                 </div>
                 
             </div>
             <div class="aside">
                 <div></div>
                 <div class="gradient-bg"></div>
+            </div>
+            <div class="illustration-container">
+                <div class="img-container">
+                    <img src="./assets/img/student.png" alt="student" height="70%">
+                </div>
+                <div class="img-bg"></div>
+                <div class="snake"></div>
             </div>
             <div class="pub"></div>
         </div>

@@ -27,6 +27,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 0;
+
+}
+.nav-item {
     margin-bottom: 20px;
 }
 .nav-links {
@@ -35,7 +39,23 @@ body{
 .nav-links a {
     text-decoration: none;
     color: #888;
+    display: inline;
+    position: relative;
 }
+.nav-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #222;
+    width: 0;
+    height: 3px;
+    transition: width 0.3s;
+    bottom: -20%;
+}
+.nav-links a:hover::after {
+    width: 100%
+}
+
 .nav-links a.active {
     text-decoration: none;
     font-weight: bold;
@@ -51,13 +71,15 @@ body{
     font-weight: bold;
     color: #222;
 }
-.login-btn {
+a.login-btn {
     background-color: transparent;
     padding: 10px 20px;
     border: 2px solid #ccc;
     border-radius: 20px;
     color: #888;
+    text-decoration: none;
 }
+
 .main {
     flex-grow: 1;
 }
@@ -89,6 +111,9 @@ p.violet {
 .blue {
     color:  rgb(76, 63, 175);
 }
+.relative {
+    position: relative;
+}
 .description {
     line-height: 1.4rem;
     color: #aaa;
@@ -119,6 +144,9 @@ p.violet {
     align-items: stretch;
     flex-grow: 1;
 }
+.side {
+    position: relative;
+}
 .aside div {
     width: 50%;
 }
@@ -126,4 +154,28 @@ p.violet {
     border-radius: 15px;
     background: rgb(2,0,85);
     background: linear-gradient(40deg, rgba(2,0,85,1) 0%, rgba(76,63,175,1) 35%, rgba(240,4,134,1) 100%);
+}
+.illustration-container {
+    position: absolute;
+    width: 40%;
+    top: 10%;
+    height: 80%;
+    right: 0;
+    border-radius: 50%;
+}
+.img-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+}
+.img-container img {
+    
+}
+.logo {
+    margin-right: 35px;
+    color: #888;
 }
