@@ -163,15 +163,24 @@ p.violet {
     right: 0;
     border-radius: 50%;
 }
-.img-container {
+.img-container, .img-bg, .snake-container {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20%;
 }
+.img-container {
+    padding-bottom: 20%;
+    z-index: 2;
+}
+.snake-container {
+    z-index: 3;
+}
+.img-bg {
+}
+
 .img-container img {
     
 }
