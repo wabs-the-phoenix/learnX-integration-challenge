@@ -17,9 +17,9 @@ import { setCanvasRightSize, drawCircle, drawSnake } from "./canvas.js";
     const calculateSnakePoints = (width) => {
         const y = width / 2;
         const x1 = 5 * width / 100;
-        const x2 = x1 * 1.2;
+        const x2 = x1 * 2.5;
         const x4 = width - x1;
-        const x3 = width - 1.2 * x4;
+        const x3 = x4 - (x2 - x1);
         return {
             firstLeftPoint : {x: x1, y},
             secondLeftPoint : {x: x2, y},

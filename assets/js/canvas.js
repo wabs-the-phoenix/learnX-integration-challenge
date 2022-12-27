@@ -41,6 +41,7 @@ export const drawSnake = (
     firstRightPoint,
     secondRightPoint
     ) => {
+        const y = firstLeftPoint.y;
         const bgCenter = {};
         bgCenter.x = ( firstLeftPoint.x + secondRightPoint.x ) / 2;
         const bgRadius = bgCenter.x - firstLeftPoint.x;
@@ -48,6 +49,13 @@ export const drawSnake = (
         const ctx = canvas.getContext('2d');
         ctx.fillStyle = fillStyle;
         ctx.beginPath();
-        ctx.arc(bgCenter.x, bgCenter.y, bgRadius, 0, Math.PI, false);
+        ctx.moveTo(firstLeftPoint.x, firstLeftPoint.y);
+        ctx.bezierCurveTo(firstLeftPoint.x , y + 300, secondRightPoint.x, y + 300, secondRightPoint.x, secondRightPoint.y);
+        ctx.moveTo(secondRightPoint.x, secondRightPoint.y);
+        ctx.bezierCurveTo(secondRightPoint.x , y - 30, firstRightPoint.x, y - 30, firstRightPoint.x, firstRightPoint.y);
+        ctx.moveTo(firstRightPoint.x, firstRightPoint.y);
+        ctx.bezierCurveTo(firstRightPoint.x, y + 250, secondLeftPoint.x, y + 250, secondLeftPoint.x, secondLeftPoint.y);
+        ctx.moveTo(secondLeftPoint.x, secondLeftPoint.y);
+        ctx.bezierCurveTo(secondLeftPoint.x , y - 30, firstLeftPoint.x, y - 30, firstLeftPoint.x, secondLeftPoint.y);
         ctx.fill()
 }
